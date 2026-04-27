@@ -1,0 +1,10 @@
+services:
+  angular-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: project4-angular:latest
+    container_name: angular_app
+    ports:
+      - "8080:80"
+    restart: unless-stopped
