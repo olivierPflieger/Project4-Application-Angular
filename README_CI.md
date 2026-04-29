@@ -14,14 +14,15 @@ Puis
 ng serve
 ```
 
+Application disponible sur http://localhost:4200
+
+
 ## DEMARRER ANGULAR - DOCKER
 
 Au préalable j'ai ajouté :
 
 - dockerfile (build + Nginx)
-
 - docker-compose
-
 - dockerignore
 
 Se mettre à la racine du projet Angular :
@@ -30,16 +31,16 @@ Se mettre à la racine du projet Angular :
 docker compose up -d
 ```
 
-Le site est disponible à l'adresse http://localhost:8080
+Le site est disponible à l'adresse http://localhost:4200
 
 ### Pour recompiler docker compose
 
-    docker compose down
-
-=> supprimer l'image  
+Pour recompiler docker compose
 
 ```
-docker compose up
+docker compose down
+docker compose up -d
 ```
-
+ATTENTION : Ca ne reconstruit pas l'image !
+Pour reconstruire l'image, supprimer l'image entre les 2 commandes
 
