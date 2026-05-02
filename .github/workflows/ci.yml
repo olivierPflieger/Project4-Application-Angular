@@ -3,7 +3,10 @@ name: CI
 
 on:
   push:
+  pull_request:
 
 jobs:
   call:
     uses: orga-project4/Project4-ci/.github/workflows/generic-ci.yml@main
+    with:
+      test-tool: npm
