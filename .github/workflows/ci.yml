@@ -1,0 +1,9 @@
+
+name: CI
+
+on:
+  push:
+
+jobs:
+  call:
+    uses: orga-project4/Project4-ci/.github/workflows/generic-ci.yml@main

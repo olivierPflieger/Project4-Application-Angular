@@ -5,6 +5,8 @@
 /tmp
 /out-tsc
 /bazel-out
+.npm
+reports
 
 # Node
 /node_modules
